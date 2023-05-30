@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+venv/
+app/logs/
+app/mediafiles/members_avatar/
+db.sqlite3
+info.txt
+.idea/
