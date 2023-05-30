@@ -1,0 +1,11 @@
+<p-card header="Patient Card" [style]="{ width: '360px' }">
+  <p>имя пациента: {{ patient.name }}</p>
+  <p>пол: {{ patient.gender }}</p>
+  <p>дата рождения: {{ patient.birth_date }}</p>
+
+  <p>количество записей на прием: {{ patient.appointments.length }}</p>
+  <div *ngFor="let appointment of patient.appointments">
+    дата и время: {{ appointment.appointment_date_time }} описание:
+    {{ appointment.appointment_description }}
+  </div>
+</p-card>
